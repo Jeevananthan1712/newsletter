@@ -38,3 +38,13 @@ html {
 	font-size: 12px;
   color: #fff;
 }
+.divforabout{
+  background-color: gainsboro;
+  padding: 10%;
+
+}
+.divforcontact{
+  background-color: gainsboro;
+  padding: 7%;
+
+}
