@@ -15,9 +15,23 @@ html {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+    background-color: rgb(186, 212, 186);
 }
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
+}
+
+#home a{ 
+  color: aliceblue;
+}
+#about a{ 
+  color: aliceblue;
+}
+#contact a{ 
+  color: aliceblue;
+}
+#compose a{ 
+  color: aliceblue;
 }
 
 .footer-padding {
@@ -41,10 +55,16 @@ html {
 .divforabout{
   background-color: gainsboro;
   padding: 10%;
+  margin-top:  5%;
+  margin-bottom: 5%;
+  background-image: url();
 
 }
 .divforcontact{
   background-color: gainsboro;
   padding: 7%;
-
+  margin-top:  5%;
+  margin-bottom: 5%;
 }
+
+

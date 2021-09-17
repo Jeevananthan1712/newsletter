@@ -22,13 +22,11 @@ mongoose.connect("mongodb+srv://admin-jeeva:jeeva1712@cluster1.ldaxy.mongodb.net
 
 const postSchema = {
  title: String,
- content: String
+ content: String,
+ contributor: String 
 };
 
 const Post = mongoose.model("Post", postSchema);
-
-
-
 
 app.get("/", function(req, res){
 
@@ -61,7 +59,8 @@ app.get("/compose", function(req, res){
 app.post("/compose", function(req, res){
   const post = new Post ({
       title: req.body.postTitle,
-      content: req.body.postBody
+      content: req.body.postBody,
+      contributor : req.body.contributorName
     });
     post.save(function(err){
 
@@ -83,8 +82,8 @@ app.get("/posts/:postId", function(req, res){
    res.render("post", {
 
      title: post.title,
-
-     content: post.content
+     content: post.content,
+     contributor: post.contributor
 
    });
 
